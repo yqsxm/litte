@@ -2,8 +2,6 @@
 
 * 软件不定期同步大神库更新，适合一键下载到package目录下，用于openwrt编译
 
-* 两位L大库里都少了某软件，作为搬运工，ssr与passwall的依赖一并找齐了
-
 * lede/package$下运行 或者openwrt/package$下运行
 
 ```bash
@@ -15,7 +13,7 @@
 - clash图形简易版
 - luci-theme-atmaterial        
 - atmaterial 三合一主题
-- luci-theme-argon-dark-new
+- luci-theme-argon-new
 - argon主题 Lean Lienol 19.07适配
 - luci-app-koolproxyR        
 - 去广告
@@ -26,7 +24,7 @@
 
 #### 注意
 
-* Lean大近期修改源码后，主题适配！
+* 建议用此源码编译，能很好适配主题 https://github.com/project-openwrt/openwrt
 
 
 
@@ -44,9 +42,5 @@
 ![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-2.jpg)
 ![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-3.jpg)
 ![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-4.jpg)
-* 修复opentomato 与opentomcat修改主机名无效的bug
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-719.png)
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-722.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-720.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-721.png)
+
 
