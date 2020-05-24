@@ -24,7 +24,6 @@
 
 #### 注意
 
-* 建议用此源码编译，能很好适配主题 https://github.com/project-openwrt/openwrt
 
 
 
