@@ -25,6 +25,9 @@
 #### 注意
 
 
+* 本人自用的插件并不能保证没有bug，diffconfig是自己用于编译的备份文件，不乱该的话能确保编译成功
+
+
 
 
 ![暗黄主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-9.jpg)
