@@ -7,6 +7,44 @@
 ```bash
  git clone https://github.com/kenzok8/openwrt-packages.git
 ```
+* Lean源码下快捷编译
+
+```bash
+rm -rf package/litte/microsocks && rm -rf package/litte/redsocks2 && rm -rf package/litte/tcpping
+cp -f package/litte/default-settings package/lean/default-settings/files/zzz-default-settings
+cp -f package/litte/banner package/base-files/files/etc/banner
+cp -f package/litte/Leandiffconfig .config && make defconfig
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
+
+* Lienol源码下快捷编译
+
+```bash
+rm -rf package/litte/adguardhome && rm -rf package/litte/luci-app-adguardhome
+cp -f package/litte/zzz-default-settings package/default-settings/files/zzz-default-settings
+cp -f package/litte/banner package/base-files/files/etc/banner
+cp -f package/litte/Lienoldiffconfig .config && make defconfig
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
+
+* ctc team源码下快捷编译
+
+```bash
+rm -rf package/lienol/luci-app-passwall && rm -rf package/lean/luci-app-ssr-plus
+rm -rf package/litte/microsocks && rm -rf package/litte/redsocks2 && rm -rf package/litte/tcpping
+rm -rf package/litte/adguardhome && rm -rf package/litte/luci-app-adguardhome
+rm -rf package/litte/luci-app-advancedsetting && rm -rf package/litte/luci-app-aliddns && rm -rf package/litte/luci-app-clash
+rm -rf package/litte/gost && rm -rf package/litte/luci-app-gost && rm -rf package/litte/luci-app-eqos
+rm -rf package/ctcgfw/luci-app-openclash && rm -rf package/litte/luci-app-smartdns && rm -rf package/litte/smartdns
+rm -rf package/ctcgfw/luci-theme-atmaterial && rm -rf package/ctcgfw/luci-theme-opentomato && rm -rf package/ctcgfw/luci-theme-opentomcat
+cp -f package/litte/default-settings package/lean/default-settings/files/zzz-default-settings
+cp -f package/litte/banner package/base-files/files/etc/banner
+cp -f package/litte/ctcdiffconfig .config && make defconfig
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
 
 - openwrt 固件编译自定义主题与软件
 - luci-app-openclash           
@@ -15,7 +53,7 @@
 - atmaterial 三合一主题
 - luci-theme-argon-new
 - argon主题 Lean Lienol 19.07适配
-- luci-app-koolproxyR        
+- luci-app-ADG        
 - 去广告
 - luci-app-passwall           
 - Lienol大神passwall
