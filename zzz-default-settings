@@ -46,7 +46,7 @@ wifi up
 sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release
 echo "DISTRIB_REVISION='small'" >> /etc/openwrt_release
 sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release
-echo "DISTRIB_DESCRIPTION='google '" >> /etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='Lienol '" >> /etc/openwrt_release
 
 sed -i 's/LuCI Master/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i 's/LuCI openwrt-18.06 branch/by kenzo/g' /usr/lib/lua/luci/version.lua
