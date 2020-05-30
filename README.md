@@ -16,6 +16,8 @@ cp -f package/litte/banner package/base-files/files/etc/banner
 cp -f package/litte/Leandiffconfig .config && make defconfig
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+make download -j7 V=s && find dl -size -1024c -exec ls -l {} \;
+make download && make -j$(nproc) V=s
 ```
 
 * Lienol源码下快捷编译
@@ -27,6 +29,8 @@ cp -f package/litte/banner package/base-files/files/etc/banner
 cp -f package/litte/Lienoldiffconfig .config && make defconfig
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+make download -j7 V=s && find dl -size -1024c -exec ls -l {} \;
+make download && make -j$(nproc) V=s
 ```
 
 * ctc team源码下快捷编译
@@ -44,6 +48,8 @@ cp -f package/litte/banner package/base-files/files/etc/banner
 cp -f package/litte/ctcdiffconfig .config && make defconfig
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+make download -j7 V=s && find dl -size -1024c -exec ls -l {} \;
+make download && make -j$(nproc) V=s
 ```
 
 - openwrt 固件编译自定义主题与软件
