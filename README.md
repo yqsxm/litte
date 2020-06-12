@@ -5,8 +5,9 @@
 * lede/package$下运行 或者openwrt/package$下运行
 
 ```bash
- git clone https://github.com/kenzok8/openwrt-packages.git
+ git clone https://github.com/kenzok8/litte.git
 ```
+
 * Lean源码下快捷编译
 
 ```bash
