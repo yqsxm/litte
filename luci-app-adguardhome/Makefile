@@ -1,5 +1,3 @@
-# Copyright (C) 2018-2019 rufengsuixing
-#
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
 
@@ -20,7 +18,7 @@ define Package/luci-app-adguardhome
 	TITLE:=LuCI app for adguardhome
 	PKG_MAINTAINER:=<https://github.com/rufengsuixing/luci-app-adguardhome>
 	PKGARCH:=all
-	DEPENDS:=+!wget&&!curl:wget +AdGuardHome
+	DEPENDS:=+!wget&&!curl:wget
 endef
 
 define Package/luci-app-adguardhome/description
