@@ -29,13 +29,12 @@ sed -i 's/services/nas/g'  /usr/lib/lua/luci/view/minidlna_status.htm
 
 ln -sf /sbin/ip /usr/bin/ip
 
-sed -i 's#http://downloads.openwrt.org#https://mirrors.cloud.tencent.com/lede#g' /etc/opkg/distfeeds.conf
-sed -i 's#src/gz openwrt_luci https://mirrors.cloud.tencent.com/lede/snapshots#src/gz openwrt_luci https://mirrors.cloud.tencent.com/lede/releases/18.06.8#g' /etc/opkg/distfeeds.conf
-sed -i 's#src/gz openwrt_packages https://mirrors.cloud.tencent.com/lede/snapshots#src/gz openwrt_packages https://mirrors.cloud.tencent.com/lede/releases/18.06.8#g' /etc/opkg/distfeeds.conf
-sed -i "s/# //g" /etc/opkg/distfeeds.conf
-
+sed -i 's/downloads.openwrt.org/openwrt.proxy.ustclug.org/g' /etc/opkg/distfeeds.conf
+sed -i 's/http:/https:/g' /etc/opkg/distfeeds.conf
 sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/g' /etc/shadow
-sed -i 's|root:x:0:0:root:/root:/bin/ash|root:x:0:0:root:/root:/bin/bash|g' /etc/passwd
+
+sed -i "s/# //g" /etc/opkg/distfeeds.conf
+sed -i '/openwrt_luci/ { s/snapshots/releases\/18.06.8/g; }'  /etc/opkg/distfeeds.conf
 
 sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
 echo "iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53" >> /etc/firewall.user
@@ -54,7 +53,6 @@ sed -i 's/LuCI openwrt-18.06 branch/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i 's/LuCI 18-Lienol/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua
 echo 'luciversion = "jun"' >> /usr/lib/lua/luci/version.lua
-
 
 sed -i '/log-facility/d' /etc/dnsmasq.conf
 echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
