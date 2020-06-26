@@ -59,7 +59,7 @@ make download && make -j$(nproc) V=s
 - luci-theme-atmaterial        
 - atmaterial 三合一主题
 - luci-theme-argon-new
-- argon主题 Lean Lienol 19.07适配
+- argon二合一主题 Lean Lienol 19.07适配
 - luci-app-ADG        
 - 去广告
 - luci-app-passwall           
