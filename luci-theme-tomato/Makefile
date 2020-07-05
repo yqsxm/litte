@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=OpenTomato new kenzo
+LUCI_TITLE:=Tomato new kenzo
 LUCI_DEPENDS:=
 
 include $(TOPDIR)/feeds/luci/luci.mk
