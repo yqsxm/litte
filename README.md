@@ -60,6 +60,7 @@ make download && make -j$(nproc) V=s
 - atmaterial 三合一主题
 - luci-theme-argon-new
 - argon二合一主题 Lean Lienol 19.07适配
+- ifit 透明主题
 - luci-app-ADG        
 - 去广告
 - luci-app-passwall           
