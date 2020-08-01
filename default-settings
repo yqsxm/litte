@@ -53,7 +53,7 @@ sed -i 's/LuCI Master/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i 's/LuCI openwrt-18.06 branch/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i 's/LuCI 18-Lienol/by kenzo/g' /usr/lib/lua/luci/version.lua
 sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua
-echo 'luciversion = "Jul"' >> /usr/lib/lua/luci/version.lua
+echo 'luciversion = "Aug"' >> /usr/lib/lua/luci/version.lua
 
 sed -i '/log-facility/d' /etc/dnsmasq.conf
 echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
@@ -61,9 +61,6 @@ echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
 sed -i 's/cbi.submit\"] = true/cbi.submit\"] = \"1\"/g' /usr/lib/lua/luci/dispatcher.lua
 
 echo 'hsts=0' > /root/.wgetrc
-
-# É¾³ý×´Ì¬Ò³²»ÐèÏÔÊ¾µÄ
-mv -f /usr/lib/lua/luci/view/admin_status/index /usr/lib/lua/luci/view/admin_status/index_backup 2>/dev/null
 
 rm -rf /tmp/luci-modulecache/
 rm -f /tmp/luci-indexcache
