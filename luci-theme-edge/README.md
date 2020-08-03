@@ -14,7 +14,6 @@
 [![Issue Welcome][5]][6]
 [![Contact Me][10]][11]
 
-<a href="https://t.me/openwrt_nginx" target="_blank">Telegram</a>
 
 A new Luci theme for LEDE/OpenWRT  
 Edge is a clean HTML5 theme for LuCI. It is based on luci-theme-argon Template  
@@ -27,7 +26,3 @@ luci-theme-argon: https://github.com/jerrykuku/luci-theme-argon
 ![](/Screenshots/3.png)
 ![](/Screenshots/4.png)
 ![](/Screenshots/5.png)
-<br/>
-<br />
-<br />
-<img src="/Screenshots/6.png" width="550" />
